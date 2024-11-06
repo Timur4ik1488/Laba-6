@@ -1,17 +1,15 @@
 try:
-    s=str(input("Введите строку:"))
-    i=0
-    res=''
-    for i in range(len(s)):
-        letter=s[i]
-        if letter.upper()==letter:
-            letter=letter.lower()
-        else:
-            letter=letter.upper()
-        res+=str(letter)
-    print(res)
-except:
-    print("Неверно введена строка")
+    def f(s):
+            #Инициализация всех переменных
+        max_r=0 #максимальная доля
+        res_words=[] #список слов
+        cur_word="" #отдельное слово из строки
+        total_count=0 #общее количество букв А и Б
+        count_a=0
+        count_b=0
+        for i in s: #перебор элементов из списка
+
+
 
 
 
