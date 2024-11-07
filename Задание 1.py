@@ -22,6 +22,19 @@ try:
                     else:
                         r=0
 
+                    # сравниваем с максимальной долей в слове
+                    if r > max_r:
+                        max_r = r
+                        res_words = [cur_word]  # начинаем новый список с текущим словом
+                    elif r == max_r:
+                        res_words = [*res_words, cur_word]  # заносим это слово в список с конечным результатом
+
+                # сбрасываем счётчики для нового слова
+                cur_word = ""
+                total_count = 0
+                count_a = 0
+                count_b = 0
+
 
 
 
