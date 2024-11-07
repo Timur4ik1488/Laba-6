@@ -8,6 +8,29 @@ try:
         count_a=0
         count_b=0
         for i in s: #перебор элементов из списка
+            if i != ' ': #если символ не будет являться проблелом, то добавляем будем добавлять его в отдельную строку
+                cur_word+=i
+                if i == ('а'):
+                    count_a+=1
+                elif i == 'б':
+                    count_b+=1
+                total_count+=1 #общее воличество букв в слове
+            else:
+                if cur_word:
+                    if total_count>0:
+                        r=(count_a + count_b)/total_count #высчитываем общее количество букв а и б в слове
+                    else:
+                        r=0
+
+
+
+
+
+
+
+
+
+
 
 
 
